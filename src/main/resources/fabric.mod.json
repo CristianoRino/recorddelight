@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "recorddelight",
+	"version": "${version}",
+	"name": "RecordDelight",
+	"description": "",
+	"authors": [
+		"RinO"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/recorddelight/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.rino.recorddelight.RecordDelight"
+		],
+		"client": [
+			"net.rino.recorddelight.RecordDelightClient"
+		],
+		"fabric-datagen": [
+			"net.rino.recorddelight.RecordDelightDataGenerator"
+		]
+	},
+	"mixins": [
+		"recorddelight.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
